@@ -1,5 +1,6 @@
 import flask, flask.views
 import json
+import os 
 
 # extra1
 from flask import Flask, flash, redirect, render_template, \
@@ -48,11 +49,11 @@ app.add_url_rule('/lion',
 @app.route('/about', methods=['GET', 'POST'])
 def about():
     if request.method == 'GET':
-        flash('Example of Flashing)
+        flash('Example of Flashing')
         flash('Example of Flashing 2')
         return render_template('about.html')
 
-
+'''
 app.debug = True
 app.run()
-
+'''
